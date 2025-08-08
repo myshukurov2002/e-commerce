@@ -1,0 +1,14 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ecommerce
+    driver-class-name: org.postgresql.Driver
+    username: mazgiuser
+    password: mazgi123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false

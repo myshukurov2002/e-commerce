@@ -1,0 +1,9 @@
+---
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    url: jdbc:h2:mem:devdb
+  jpa:
+    show-sql: true
