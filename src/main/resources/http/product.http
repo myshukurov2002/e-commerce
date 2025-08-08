@@ -1,0 +1,46 @@
+### Barcha mahsulotlarni sahifalash bilan olish
+GET http://localhost:8080/api/v1/products?page=0&size=10
+Accept: application/json
+
+###
+
+### Mahsulotlarni nom va kategoriya bo‘yicha qidirish
+GET http://localhost:8080/api/v1/products/search?name=phone&category=electronics&page=0&size=10
+Accept: application/json
+
+###
+
+### Id bo‘yicha mahsulotni olish
+GET http://localhost:8080/api/v1/products/1
+Accept: application/json
+
+###
+
+### Yangi mahsulot yaratish
+POST http://localhost:8080/api/v1/products
+Content-Type: application/json
+
+{
+  "name": "Samsung Galaxy S21",
+  "price": 999.99,
+  "stock": 15,
+  "category": "electronics"
+}
+
+###
+
+### Mahsulotni yangilash
+PUT http://localhost:8080/api/v1/products/1
+Content-Type: application/json
+
+{
+  "name": "Samsung Galaxy S22",
+  "price": 1099.99,
+  "stock": 20,
+  "category": "electronics"
+}
+
+###
+
+### Mahsulotni o'chirish
+DELETE http://localhost:8080/api/v1/products/1

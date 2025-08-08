@@ -1,0 +1,51 @@
+### Barcha buyurtmalar ro'yxatini olish
+GET http://localhost:8080/api/v1/orders
+Accept: application/json
+
+###
+
+### Id bo'yicha buyurtmani olish
+GET http://localhost:8080/api/v1/orders/1
+Accept: application/json
+
+###
+
+### Buyurtma yaratish
+POST http://localhost:8080/api/v1/orders
+Content-Type: application/json
+
+{
+  "customerName": "Ali Valiyev",
+  "customerEmail": "ali@example.com",
+  "orderItems": [
+    {
+      "productId": 1,
+      "quantity": 2
+    },
+    {
+      "productId": 3,
+      "quantity": 1
+    }
+  ]
+}
+
+###
+
+### Buyurtma statusini yangilash
+PUT http://localhost:8080/api/v1/orders/1/status
+Content-Type: application/json
+
+{
+  "status": "CONFIRMED"
+}
+
+###
+
+### Buyurtmani bekor qilish
+DELETE http://localhost:8080/api/v1/orders/1
+
+###
+
+### Mijoz email bo'yicha buyurtmalarni olish
+GET http://localhost:8080/api/v1/orders/customer/ali@example.com
+Accept: application/json

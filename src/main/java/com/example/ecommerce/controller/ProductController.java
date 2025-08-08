@@ -5,6 +5,7 @@ import com.example.ecommerce.dto.response.ProductResponse;
 import com.example.ecommerce.service.ProductService;
 import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.http.HttpStatus;
@@ -30,6 +31,7 @@ public class ProductController {
     }
 
     @GetMapping("/{id}")
+    @Cacheable(value = "products", key = "#id")
     public ProductResponse getProductById(@PathVariable Long id) {
         return productService.getProductByIdResponse(id);
     }
