@@ -165,7 +165,7 @@ public class OrderService {
                 .price(product.getPrice())
                 .stock(product.getStock())
                 .category(product.getCategory())
-                .isActive(product.isVisibility())
+                .visibility(product.isVisibility())
                 .build();
     }
 

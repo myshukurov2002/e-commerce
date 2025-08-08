@@ -19,5 +19,6 @@ public class ProductResponse {
     private String category;
     private LocalDateTime createdAt;
     private LocalDateTime updatedAt;
+    private Boolean visibility;
 }
 

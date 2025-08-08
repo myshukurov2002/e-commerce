@@ -100,5 +100,6 @@ Testlarni ishlatish:
     
 mvn test
 
+Qo'shimcha http testlar yozilgan
 agar vaqt yetkanida. Project By Feature bi;an yaratkan bo'lar edim
 
