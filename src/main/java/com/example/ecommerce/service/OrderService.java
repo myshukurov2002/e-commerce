@@ -1,7 +1,10 @@
 package com.example.ecommerce.service;
 
-import com.example.ecommerce.dto.*;
-import com.example.ecommerce.dto.OrderRequest;
+import com.example.ecommerce.dto.request.OrderItemRequest;
+import com.example.ecommerce.dto.request.OrderRequest;
+import com.example.ecommerce.dto.response.OrderItemResponse;
+import com.example.ecommerce.dto.response.OrderResponse;
+import com.example.ecommerce.dto.response.ProductResponse;
 import com.example.ecommerce.exception.*;
 import com.example.ecommerce.model.*;
 import com.example.ecommerce.repository.OrderRepository;

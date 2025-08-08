@@ -1,4 +1,4 @@
-package com.example.ecommerce.dto;
+package com.example.ecommerce.dto.response;
 
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
