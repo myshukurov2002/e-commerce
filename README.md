@@ -97,5 +97,8 @@ Password: (bo‘sh)
 Loyihada JUnit 5 va Spring Boot Test yordamida yozilgan unit va integration testlar mavjud.
 
 Testlarni ishlatish:
-
+    
 mvn test
+
+agar vaqt yetkanida. Project By Feature bi;an yaratkan bo'lar edim
+
